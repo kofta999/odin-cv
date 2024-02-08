@@ -1,7 +1,7 @@
 import { ChangeEventHandler } from "react";
 
 interface Props {
-  type: "text" | "email" | "tel" | "date";
+  type: "text" | "email" | "tel" | "month";
   name: string;
   id: string;
   placeHolder: string;

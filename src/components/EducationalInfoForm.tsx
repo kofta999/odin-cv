@@ -29,13 +29,23 @@ export default function EducationalInfoForm({ handleChange, info }: Props) {
         value={info.titleOfStudy}
         onChange={handleChange("titleOfStudy")}
       />
+
       <Input
-        type="date"
+        type="month"
         name="dateOfStudy"
         id="dateOfStudy"
         placeHolder="Date Of Study"
         value={info.dateOfStudy}
         onChange={handleChange("dateOfStudy")}
+      />
+
+      <Input
+        type="month"
+        name="endDateOfStudy"
+        id="endDateOfStudy"
+        placeHolder="End Date Of Study"
+        value={info.endDateOfStudy}
+        onChange={handleChange("endDateOfStudy")}
       />
     </FormSection>
   );

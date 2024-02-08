@@ -13,6 +13,7 @@ export interface EduInfo {
   schoolName: string;
   titleOfStudy: string;
   dateOfStudy: string;
+  endDateOfStudy: string;
 }
 
 export interface ProInfo {
@@ -40,6 +41,7 @@ function App() {
       schoolName: "",
       titleOfStudy: "",
       dateOfStudy: "",
+      endDateOfStudy: "",
     },
     proInfo: {
       companyName: "",

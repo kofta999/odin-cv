@@ -1,5 +1,6 @@
 import { FormValues } from "../App";
 import "../styles/resume.css";
+import EducationalInfo from "./EducationalInfo";
 import GeneralInfo from "./GeneralInfo";
 
 export default function Resume({ generalInfo, eduInfo, proInfo }: FormValues) {
@@ -8,11 +9,7 @@ export default function Resume({ generalInfo, eduInfo, proInfo }: FormValues) {
       <div id="resume">
         <GeneralInfo {...generalInfo} />
 
-        <div className="edu-experience">
-          <h1>{eduInfo.schoolName}</h1>
-          <h2>{eduInfo.titleOfStudy}</h2>
-          <h3>{eduInfo.dateOfStudy}</h3>
-        </div>
+        <EducationalInfo {...eduInfo} />
 
         <div className="pro-experience">
           <h1>{proInfo.companyName}</h1>
