@@ -52,7 +52,28 @@ function App() {
     },
   };
 
-  const [formValues, setFormValues] = useState(initialFromValues);
+  const initalFilledForm: FormValues = {
+    generalInfo: {
+      name: "Mostafa Mahmoud",
+      email: "mostafa.m.helmy@outlook.com",
+      phoneNo: "+20 1158254758",
+    },
+    eduInfo: {
+      schoolName: "Suez Canal University",
+      titleOfStudy: "Computer Engineering",
+      dateOfStudy: "2020-10",
+      endDateOfStudy: "2025-07",
+    },
+    proInfo: {
+      companyName: "Some Company",
+      jobTitle: "Full Stack Developer",
+      jobDetails: "Creating Full Stack applications",
+      workedFrom: "2024-06",
+      workedUntil: "",
+    },
+  };
+
+  const [formValues, setFormValues] = useState(initalFilledForm);
   return (
     <>
       <Form formValues={formValues} setFormValues={setFormValues} />

@@ -40,7 +40,7 @@ export default function ProfessionalInfoForm({ handleChange, info }: Props) {
       />
 
       <Input
-        type="date"
+        type="month"
         name="workedFrom"
         id="workedFrom"
         placeHolder="Worked From"
@@ -49,7 +49,7 @@ export default function ProfessionalInfoForm({ handleChange, info }: Props) {
       />
 
       <Input
-        type="date"
+        type="month"
         name="workedUntil"
         id="workedUntil"
         placeHolder="Worked Until"

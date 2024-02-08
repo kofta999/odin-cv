@@ -3,22 +3,20 @@
 }
 
 #resume-container {
-  display: flex;
-  overflow: auto;
-  min-width: 210mm;
+  box-shadow: var(--shadow);
   width: 210mm;
-  min-height: 297mm;
   height: 297mm;
 }
 
 #resume {
   background-color: white;
-  color: #363c48;
-  padding: 10px 30px;
-  box-shadow: var(--shadow);
-  font-size: 0.8em;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  color: #363c48;
+  padding: 10px 30px;
+  font-size: 0.8em;
 }
 
 .section {
@@ -35,7 +33,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  justify-items: center;
   align-items: center;
 }
 

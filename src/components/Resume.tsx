@@ -7,9 +7,9 @@ export default function Resume({ generalInfo, eduInfo, proInfo }: FormValues) {
   return (
     <div id="resume-container">
       <div id="resume">
-        <GeneralInfo {...generalInfo} />
+        {generalInfo && <GeneralInfo {...generalInfo} />}
 
-        <EducationalInfo {...eduInfo} />
+        {eduInfo.titleOfStudy && <EducationalInfo {...eduInfo} />}
 
         <div className="pro-experience">
           <h1>{proInfo.companyName}</h1>
