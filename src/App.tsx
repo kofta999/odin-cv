@@ -3,13 +3,19 @@ import Form from "./components/Form";
 import Resume from "./components/Resume";
 import "./app.css";
 
-export interface FormValues {
+export interface GeneralInfo {
   name: string;
   email: string;
   phoneNo: string;
+}
+
+export interface EduInfo {
   schoolName: string;
   titleOfStudy: string;
   dateOfStudy: string;
+}
+
+export interface ProInfo {
   companyName: string;
   jobTitle: string;
   jobDetails: string;
@@ -17,26 +23,38 @@ export interface FormValues {
   workedUntil: string;
 }
 
+export interface FormValues {
+  generalInfo: GeneralInfo;
+  eduInfo: EduInfo;
+  proInfo: ProInfo;
+}
+
 function App() {
   const initialFromValues: FormValues = {
-    name: "",
-    email: "",
-    phoneNo: "",
-    schoolName: "",
-    titleOfStudy: "",
-    dateOfStudy: "",
-    companyName: "",
-    jobDetails: "",
-    jobTitle: "",
-    workedFrom: "",
-    workedUntil: "",
+    generalInfo: {
+      name: "",
+      email: "",
+      phoneNo: "",
+    },
+    eduInfo: {
+      schoolName: "",
+      titleOfStudy: "",
+      dateOfStudy: "",
+    },
+    proInfo: {
+      companyName: "",
+      jobDetails: "",
+      jobTitle: "",
+      workedFrom: "",
+      workedUntil: "",
+    },
   };
 
   const [formValues, setFormValues] = useState(initialFromValues);
   return (
     <>
       <Form formValues={formValues} setFormValues={setFormValues} />
-      <Resume formValues={formValues} />
+      <Resume {...formValues} />
     </>
   );
 }
