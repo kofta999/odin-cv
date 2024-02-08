@@ -1,4 +1,5 @@
 import { EduInfo } from "../App";
+import ResumeDate from "./ResumeDate";
 
 export default function EducationalInfo({
   dateOfStudy,
@@ -12,13 +13,7 @@ export default function EducationalInfo({
       <hr />
       <div className="content">
         {dateOfStudy && (
-          <div className="date">
-            <span className="start-date">{dateOfStudy}</span>
-            <span>-</span>
-            <span className="end-date">
-              {endDateOfStudy ? endDateOfStudy : "present"}
-            </span>
-          </div>
+          <ResumeDate startDate={dateOfStudy} endDate={endDateOfStudy} />
         )}
         <div className="details">
           <h3>{titleOfStudy}</h3>

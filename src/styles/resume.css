@@ -2,6 +2,11 @@
   --header-color: #003c72;
 }
 
+span,
+h3 {
+  line-height: 1.2em;
+}
+
 #resume-container {
   box-shadow: var(--shadow);
   width: 210mm;
@@ -46,15 +51,17 @@
   font-size: 1.2em;
 }
 
-.edu-experience .content {
+.edu-experience .content,
+.pro-experience .content {
   display: grid;
   grid-template-columns: 0.3fr 1fr;
   gap: 20px;
   margin-top: 20px;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.edu-experience .title {
+.edu-experience .title,
+.pro-experience .title {
   font-size: 2em;
   color: var(--header-color);
   font-weight: bold;
@@ -68,13 +75,20 @@
   margin-left: 10px;
 }
 
-.edu-experience .details h3 {
+.edu-experience .details h3,
+.pro-experience .details h3 {
   font-size: 1.5em;
+  padding: 0;
   margin: 0;
 }
 
-.edu-experience .details h4 {
+.edu-experience .details h4,
+.pro-experience .details h4 {
   font-size: 1.25em;
   font-style: italic;
   font-weight: 500;
+}
+
+.pro-experience .details p {
+  font-size: 1.2em;
 }

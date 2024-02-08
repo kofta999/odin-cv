@@ -15,5 +15,4 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   padding: 20px;
-  border: 3px solid red;
 }
