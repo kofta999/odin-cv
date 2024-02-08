@@ -1,4 +1,42 @@
+#resume-container {
+  display: flex;
+  overflow: auto;
+  min-width: 210mm;
+  width: 210mm;
+  min-height: 297mm;
+  height: 297mm;
+}
+
 #resume {
-  border: 3px solid black;
-  padding: 20px;
+  background-color: white;
+  color: #363c48;
+  padding: 10px 30px;
+  box-shadow: var(--shadow);
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+.general-info .name {
+  color: #003c72;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.general-info .contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact h3 .value {
+  color: #424853;
+  font-weight: 500;
+}
+
+.contact h3 .label {
+  margin-right: 10px;
+  font-size: 1.2em;
 }
