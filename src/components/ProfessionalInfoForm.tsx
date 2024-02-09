@@ -11,7 +11,7 @@ interface Props {
 
 export default function ProfessionalInfoForm({ handleChange, info }: Props) {
   return (
-    <FormSection id="professional-form">
+    <FormSection id="professional-form" sectionName="Professional Information">
       <Input
         type="text"
         name="companyName"

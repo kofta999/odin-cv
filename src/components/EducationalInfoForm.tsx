@@ -11,7 +11,7 @@ interface Props {
 
 export default function EducationalInfoForm({ handleChange, info }: Props) {
   return (
-    <FormSection id="educational-form">
+    <FormSection id="educational-form" sectionName="Educational Information">
       <Input
         type="text"
         name="schoolName"

@@ -3,10 +3,12 @@ import { PropsWithChildren } from "react";
 export default function FormSection({
   id,
   children,
-}: PropsWithChildren<{ id: string }>) {
+  sectionName,
+}: PropsWithChildren<{ id: string; sectionName: string }>) {
   return (
-    <div className="form-section" id={id}>
-      {children}
+    <div id={id} className="form-section">
+      <div className="section-header">{sectionName}</div>
+      <div className="section-items">{children}</div>
     </div>
   );
 }

@@ -10,14 +10,18 @@ interface Props {
 }
 
 export default function Input(props: Props) {
+  const inputId = props.id + "-input";
   return (
-    <input
-      type={props.type}
-      name={props.name}
-      id={props.id}
-      placeholder={props.placeHolder}
-      value={props.value}
-      onChange={props.onChange}
-    />
+    <div className="form-input" id={props.id}>
+      <label htmlFor={inputId}>{props.placeHolder}</label>
+      <input
+        type={props.type}
+        name={props.name}
+        id={inputId}
+        placeholder={props.placeHolder}
+        value={props.value}
+        onChange={props.onChange}
+      />
+    </div>
   );
 }
