@@ -2,7 +2,7 @@ import { GeneralInfo as IGeneralInfo } from "../App";
 
 export default function GeneralInfo({ name, email, phoneNo }: IGeneralInfo) {
   return (
-    <div className="section general-info">
+    <div className="resume-section general-info">
       <div className="name">
         <h1>{name}</h1>
       </div>

@@ -9,7 +9,7 @@ export default function ProfessionalInfo({
   workedUntil,
 }: ProInfo) {
   return (
-    <div className="section pro-experience">
+    <div className="resume-section pro-experience">
       <div className="title">Professional Experience</div>
       <hr />
       <div className="content">

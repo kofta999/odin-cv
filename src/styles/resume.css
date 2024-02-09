@@ -4,12 +4,14 @@ h3 {
 }
 
 #resume-container {
-  box-shadow: var(--shadow);
+  scale: 1;
+  grid-row: 1 / -1;
   width: 210mm;
   height: 297mm;
 }
 
 #resume {
+  box-shadow: var(--shadow);
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -20,7 +22,7 @@ h3 {
   font-size: 0.8em;
 }
 
-.section {
+.resume-section {
   margin-bottom: 50px;
 }
 

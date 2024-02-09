@@ -2,6 +2,7 @@ import { useState } from "react";
 import Form from "./components/Form";
 import Resume from "./components/Resume";
 import "./app.css";
+import ManageFormSection from "./components/ManageFormSection";
 
 export interface GeneralInfo {
   name: string;
@@ -31,7 +32,7 @@ export interface FormValues {
 }
 
 function App() {
-  const initialFromValues: FormValues = {
+  const emptyFromValues: FormValues = {
     generalInfo: {
       name: "",
       email: "",
@@ -52,7 +53,7 @@ function App() {
     },
   };
 
-  const initalFilledForm: FormValues = {
+  const initialFormValues: FormValues = {
     generalInfo: {
       name: "Mostafa Mahmoud",
       email: "mostafa.m.helmy@outlook.com",
@@ -73,9 +74,14 @@ function App() {
     },
   };
 
-  const [formValues, setFormValues] = useState(initalFilledForm);
+  const [formValues, setFormValues] = useState(initialFormValues);
   return (
     <>
+      <ManageFormSection
+        emptyFormValues={emptyFromValues}
+        initialFormValues={initialFormValues}
+        setFormValues={setFormValues}
+      />
       <Form formValues={formValues} setFormValues={setFormValues} />
       <Resume {...formValues} />
     </>

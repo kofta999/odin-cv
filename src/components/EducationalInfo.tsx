@@ -8,7 +8,7 @@ export default function EducationalInfo({
   titleOfStudy,
 }: EduInfo) {
   return (
-    <div className="section edu-experience">
+    <div className="resume-section edu-experience">
       <div className="title">Education</div>
       <hr />
       <div className="content">
