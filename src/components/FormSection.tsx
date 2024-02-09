@@ -5,7 +5,7 @@ export default function FormSection({
   children,
 }: PropsWithChildren<{ id: string }>) {
   return (
-    <div className="formSection" id={id}>
+    <div className="form-section" id={id}>
       {children}
     </div>
   );

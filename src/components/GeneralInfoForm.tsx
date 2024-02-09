@@ -11,7 +11,7 @@ interface Props {
 
 export default function GeneralInfoForm({ handleChange, info }: Props) {
   return (
-    <FormSection id="general-from">
+    <FormSection id="general-form">
       <Input
         id="name"
         name="name"

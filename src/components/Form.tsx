@@ -3,6 +3,7 @@ import { FormValues } from "../App";
 import EducationalInfoForm from "./EducationalInfoForm";
 import ProfessionalInfoForm from "./ProfessionalInfoForm";
 import GeneralInfoForm from "./GeneralInfoForm";
+import "../styles/form.css";
 
 interface Props {
   formValues: FormValues;

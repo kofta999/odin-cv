@@ -8,6 +8,7 @@
   --bg-color-light: #f0eeeb;
   --text-color-light: #030712;
   --shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  --header-color: #003c72;
 }
 
 #root {

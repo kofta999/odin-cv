@@ -23,20 +23,20 @@ export default function ProfessionalInfoForm({ handleChange, info }: Props) {
 
       <Input
         type="text"
-        name="jobDetails"
-        id="jobDetails"
-        placeHolder="Job Details"
-        value={info.jobDetails}
-        onChange={handleChange("jobDetails")}
-      />
-
-      <Input
-        type="text"
         name="jobTitle"
         id="jobTitle"
         placeHolder="Job Title"
         value={info.jobTitle}
         onChange={handleChange("jobTitle")}
+      />
+
+      <Input
+        type="text"
+        name="jobDetails"
+        id="jobDetails"
+        placeHolder="Job Details"
+        value={info.jobDetails}
+        onChange={handleChange("jobDetails")}
       />
 
       <Input
